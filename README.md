@@ -11,8 +11,6 @@ This is the backend service for the Curvvtech Smart Device Management Platform, 
 - [Environment Variables](#environment-variables)
 - [Running the Application](#running-the-application)
 - [API Endpoints](#api-endpoints)
-- [Assumptions](#assumptions)
-- [Future Improvements](#future-improvements)
 
 ## Project Overview
 

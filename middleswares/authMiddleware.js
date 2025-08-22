@@ -10,7 +10,8 @@ module.exports = (req, res, next) => {
 
   try {
     const decoded = jwt.verify(token, JWT_SECRET);
-    req.user = { id: decoded.id, role: decoded.role };
+    req.user = { id: decoded.id, role: decoded.role, organizationId: decoded.organizationId };
+    console.log('hi i am try');
     next();
   } catch (err) {
     return res.status(401).json({ success: false, message: 'Invalid token' });
